@@ -1,0 +1,24 @@
+{
+  "name": "poliklinikutamapd-review-page-be",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx dotenv -e .env.development node server.js",
+    "start:dev": "npx dotenv -e .env.development nodemon server.js",
+    "migrate:dev": "dotenv -e .env.development -- npx prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "cors": "^2.8.5",
+    "dotenv-cli": "^7.4.2",
+    "express": "^4.19.2",
+    "luxon": "^3.4.4",
+    "morgan": "^1.10.0",
+    "prisma": "^5.14.0"
+  }
+}
